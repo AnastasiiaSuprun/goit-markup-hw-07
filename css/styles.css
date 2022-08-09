@@ -205,7 +205,9 @@ img {
 |===============================
 |Hero section
 |===============================
-*/
+
+
+
 .hero {
   background-color: var(--dark-bg-color);
   padding-top: 200px;
@@ -266,12 +268,12 @@ img {
 .hero__btn:focus {
   background-color: #188ce8;
 }
-
+*/
 /**
 |===============================
 |Features section
 |===============================
-*/
+
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -316,15 +318,12 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-
+*/
 /**
 |===============================
 |Services section
 |===============================
-*/
-.services {
-  padding-bottom: 94px;
-}
+
 
 .second-title {
   color: var(--main-txt-cl);
@@ -336,18 +335,23 @@ img {
 
   margin-bottom: 50px;
 }
-.service-list {
+
+.services {
+  padding-bottom: 94px;
+}
+
+.services__list {
   display: flex;
   gap: 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.sevice-item {
+.services__item {
   position: relative;
 }
 
-.service-img-over {
+.services__img-over {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -356,7 +360,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.service-img-title {
+.services__img-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -366,27 +370,25 @@ img {
 
   color: #ffffff;
 }
-
+*/
 /**
 |===============================
 |Team section
 |===============================
-*/
+
 .team {
   background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.second-title {
-  margin-bottom: 50px;
-}
-.team-list {
+
+.team__list {
   display: flex;
   gap: 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
-.team-wrapper {
+.team__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -398,7 +400,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team-subtitle {
+.team__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -408,24 +410,24 @@ img {
   margin-bottom: 10px;
 }
 
-.about-desc-team {
+.team__desc-about {
   color: var(--accent-txt-cl);
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-align: center;
 }
-
+*/
 /**
 |===============================
 |Clients section
 |===============================
-*/
-.clients-section {
+
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients {
+.clients__list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -435,12 +437,12 @@ img {
   margin-bottom: 0;
 }
 
-.clients-item {
+.clients__item {
   height: 92px;
   width: 170px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -457,52 +459,54 @@ img {
   transition: fill var(--animation);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--link-txt-cl);
 }
 
-.clients-link:focus .clients-icon {
+.clients__link:focus .clients-icon {
   fill: var(--link-txt-cl);
 }
 
-.clients-link:hover .clients-icon {
+.clients__link:hover .clients-icon {
   fill: var(--link-txt-cl);
 }
+
+*/
 /**
 |===============================
 |Footer
 |===============================
-*/
+
 
 .footer {
   background-color: var(--dark-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-section {
+.footer__section {
   display: flex;
   align-items: baseline;
-  /*gap: 70px;*/
+
 }
-.footer-contacts {
+.footer__contacts {
   margin-right: 70px;
 }
 
-.logo-footer {
+.footer__logo {
   margin-right: 0;
 }
-.contacts-adress {
+.footer__contacts-adress {
   font-style: normal;
   margin-top: 20px;
 }
-.footer-item {
+.footer__item {
   margin-top: 0;
   margin-bottom: 0;
 
   transition: color var(--animation);
 }
-.footer-list {
+.footer__list {
   margin-bottom: 9px;
 }
 
@@ -510,14 +514,14 @@ img {
   margin-bottom: 0;
 }
 
-.footer-adress {
+.contacts-adress {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-top: 20px;
 }
-.footer-email,
-.footer-phone {
+.contacts-email,
+.contacts-phone {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -533,8 +537,14 @@ img {
 .link:focus {
   color: var(--link-txt-cl);
 }
+*/
+/**
+|===============================
+|Footer MIDDLE SECTION
+|===============================
 
-.footer-connect {
+
+.footer__connect {
   display: flex;
   gap: 10px;
   margin-top: 20px;
@@ -550,7 +560,7 @@ img {
   color: #ffffff;
 }
 
-.footer-connect-link {
+.footer__connect-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -566,21 +576,22 @@ img {
   fill: #ffffff;
 }
 
-.footer-connect-link:hover,
-.footer-connect-link:focus {
+.footer__connect-link:hover,
+.footer__connect-link:focus {
   background-color: var(--link-txt-cl);
 }
 
-.footer-connect-link:hover,
-.footer-connect-link:focus .footer-icon {
+.footer__connect-link:hover,
+.footer__connect-link:focus .footer-icon {
   fill: #ffffff;
 }
+*/
 
 /**
 |===============================
 |Social list
 |===============================
-*/
+
 .socials {
   display: flex;
   align-items: center;
@@ -619,12 +630,19 @@ img {
 .socials-link:focus .socials-icon {
   fill: #ffffff;
 }
+
+*/
+
+/**
+|===============================
+|Footer form
+|===============================
+
 .container-footer {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
-
 .footer-form {
   margin-left: 93px;
   margin-right: 10px;
@@ -672,14 +690,15 @@ img {
   transition: background-color var(--animation);
 }
 
-.footer-icon-button {
-  fill: #ffffff;
-}
-
 .footer-button:hover,
 .footer-button:focus {
   background-color: #188ce8;
 }
+
+.footer-icon-button {
+  fill: #ffffff;
+}
+*/
 /**
 |===============================
 |Portfolio list
@@ -692,7 +711,21 @@ img {
   padding-bottom: 94px;
 }
 
-.project-container {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.functional__project {
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -700,20 +733,7 @@ img {
   margin-bottom: 50px;
 }
 
-.project-link:hover,
-.project-link:focus {
-  color: #ffffff;
-  background-color: var(--link-txt-cl);
-}
-
-.btn-project:hover,
-.btn-project:focus {
-  color: #ffffff;
-  background-color: var(--link-txt-cl);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.btn-project {
+.functional__btn-project {
   font-family: inherit;
   color: var(--main-txt-cl);
   font-weight: 500;
@@ -732,23 +752,18 @@ img {
 
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
-.btn-project-current {
+
+.functional__btn-project:hover,
+.functional__btn-project:focus {
   color: #ffffff;
   background-color: var(--link-txt-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.functional__btn-project-current {
+  color: #ffffff;
+  background-color: var(--link-txt-cl);
 }
 
 /*
@@ -767,12 +782,29 @@ img {
   background-color: var(--link-txt-cl);
 }*/
 
-.about-project {
+.functional__about {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.functional__about-link {
+  display: block;
+  transition: box-shadow var(--animation);
+}
+
+.functional__about-link:hover,
+.functional__about-link:focus {
+  color: #ffffff;
+  background-color: var(--link-txt-cl);
+}
+
+.functional__about-link:hover,
+.functional__about-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-wrapper {
@@ -784,15 +816,6 @@ img {
   border-top: none;
   background: #ffffff;
   border: 1px solid #eeeeee;
-}
-.link-project {
-  display: block;
-  transition: box-shadow var(--animation);
-}
-.link-project:hover,
-.link-project:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-thumb {
@@ -851,7 +874,7 @@ img {
 |===============================
 |Modal window
 |===============================
-*/
+
 
 .backdrop {
   position: fixed;
@@ -911,12 +934,12 @@ img {
 .modal-btn:focus {
   fill: var(--link-txt-cl);
 }
-
+*/
 /**
   |============================
   | Modal form
   |============================
-*/
+
 
 .register-form {
   text-align: center;
@@ -1013,7 +1036,7 @@ textarea::placeholder {
   left: 3%;
   /*bottom: 14px;
   left: 12px;
-*/
+
   transition: fill var(--animation);
 }
 .register-form-agreement {
@@ -1079,3 +1102,4 @@ textarea::placeholder {
 .register-form-btn:focus {
   background-color: #188ce8;
 }
+*/
