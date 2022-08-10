@@ -703,9 +703,9 @@ img {
 |===============================
 |Portfolio list
 |===============================
-*/
 
-/* Project Section*/
+
+
 .functional {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -761,7 +761,7 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.functional__btn-project-current {
+.functional__btn-project--current {
   color: #ffffff;
   background-color: var(--link-txt-cl);
 }
@@ -780,7 +780,7 @@ img {
 .item-all {
   color: #ffffff;
   background-color: var(--link-txt-cl);
-}*/
+}
 
 .functional__about {
   display: flex;
@@ -852,7 +852,7 @@ img {
   position: relative;
   overflow: hidden;
 }
-*/
+
 
 .projects-item {
   font-weight: 700;
